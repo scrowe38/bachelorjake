@@ -3,7 +3,8 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
-function respond() {
+function respond() 
+{
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/Jake what are you/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/rules/
       botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/gta/; botRegexSC = /^\/sup jake/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
@@ -14,37 +15,44 @@ function respond() {
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
-  if(request.text && botRegex.test(request.text)) {
+  if(request.text && botRegex.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("faggot");
     this.res.end();
   } 
-  else if(request.text && botRegexDL.test(request.text)) {
+  else if(request.text && botRegexDL.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("Honestly, ive been putting up a front its a terrible place and we are all trying to move");
     this.res.end();
   } 
-  else if(request.text && botRegexSalt.test(request.text)) {
+  else if(request.text && botRegexSalt.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/yh4oe9D.jpg?2");
     this.res.end();
   } 
-  else if(request.text && botRegexAd.test(request.text)) {
+  else if(request.text && botRegexAd.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("Wouldn't know, sounds like criminal activity.");
     this.res.end();
   }
-  else if(request.text && botRegexRules.test(request.text)) {
+  else if(request.text && botRegexRules.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
+  else if(request.text && botRegexGTA.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
     this.res.end();
   } 
-  else if(request.text && botRegexSC.test(request.text)) {
+  else if(request.text && botRegexSC.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("pretty thirsty");
     this.res.end();
@@ -55,7 +63,8 @@ function respond() {
     this.res.end();
   }  
 
-  else if(request.text && botRegexTw.test(request.text)) {
+  else if(request.text && botRegexTw.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
@@ -65,32 +74,38 @@ function respond() {
     postMessage("It's sick, ask Sean.");
     this.res.end();
   } 
-  else if(request.text && botRegexSh.test(request.text)) {
+  else if(request.text && botRegexSh.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("Look it up fuck cake");
     this.res.end();
   } 
-  else if(request.text && botRegexWk.test(request.text)) {
+  else if(request.text && botRegexWk.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
     this.res.end();
   } 
-  else if(request.text && botODB.test(request.text)) {
+  else if(request.text && botODB.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("OBJ*");
     this.res.end();
   } 
-  else if(request.text && botDuck.test(request.text)) {
+  else if(request.text && botDuck.test(request.text)) 
+  {
     this.res.writeHead(200);
     postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
     this.res.end();
   }
-  else if(request.text && botRegexCC.test(request.text)) {
+  else if(request.text && botRegexCC.test(request.text))
+  {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
     this.res.end();
   }
-  else if(request.text && botRegexSiege.test(request.text)) {
+  else if(request.text && botRegexSiege.test(request.text)) 
+  {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
       postMessage(siege1);
@@ -101,32 +116,37 @@ function respond() {
     this.res.end();
   }
   
-  else {
+  else 
+  {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
   }
 }
 
-function postMessage(response) {
+function postMessage(response) 
+{
   var botResponse,options, body, botReq;
 
   botResponse = response
 
-  options = {
+  options = 
+  {
     hostname: 'api.groupme.com',
     path: '/v3/bots/post',
     method: 'POST'
   };
 
-  body = {
+  body = 
+  {
     "bot_id" : botID,
     "text" : botResponse
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
 
-  botReq = HTTPS.request(options, function(res) {
+  botReq = HTTPS.request(options, function(res) 
+  {
       if(res.statusCode == 202) {
         //neat
       } else {
@@ -134,7 +154,8 @@ function postMessage(response) {
       }
   });
 
-  botReq.on('error', function(err) {
+  botReq.on('error', function(err)
+  {
     console.log('error posting message '  + JSON.stringify(err));
   });
   botReq.on('timeout', function(err) {
@@ -143,7 +164,8 @@ function postMessage(response) {
   botReq.end(JSON.stringify(body));
 }
 
-function getRandomInt(min, max) {
+function getRandomInt(min, max) 
+{
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
