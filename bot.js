@@ -26,7 +26,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://imgur.com/yh4oe9D");
+    postMessage("http://i.imgur.com/yh4oe9D.jpg?2");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
