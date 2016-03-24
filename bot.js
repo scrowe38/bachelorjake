@@ -30,7 +30,7 @@ function respond()
   else if(request.text && botRegexSalt.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/yh4oe9D.jpg?2");
+    postMessage("https://media.giphy.com/media/5xaOcLxIG8VahUOdOpO/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text))
