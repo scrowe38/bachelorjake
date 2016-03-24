@@ -66,7 +66,7 @@ function respond()
   else if(request.text && botRegexTw.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("ill need a ride my car was stolen";
+    postMessage("ill need a ride my car was stolen");
     this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
