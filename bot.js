@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() 
 {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/Jake what are you/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/rules/
+      botRegex = /^\/Jake what are you/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/fuf/
       botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/gta/; botRegexSC = /^\/sup jake/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/a/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/help/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/;
@@ -42,7 +42,7 @@ function respond()
   else if(request.text && botRegexRules.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("http://i.imgur.com/Ci2s66m.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text))
