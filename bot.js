@@ -7,7 +7,7 @@ function respond()
 {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/Jake what are you/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/fuf/
-      botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/gta/; botRegexSC = /^\/sup jake/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/fuf/; botRegexSC = /^\/sup jake/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/a/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/help/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -48,7 +48,7 @@ function respond()
   else if(request.text && botRegexGTA.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("her names Ellen man, show some respect, she's the one that got away");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text))
