@@ -122,7 +122,7 @@ function respond()
   else 
   {
     this.res.writeHead(200);
-     postMessage("Moes?");
+    
     this.res.end();
   }
 }
