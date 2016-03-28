@@ -121,8 +121,8 @@ function respond()
   
   else 
   {
-    console.log("don't care");
     this.res.writeHead(200);
+     postMessage("Moes?");
     this.res.end();
   }
 }
