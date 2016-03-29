@@ -18,7 +18,7 @@ function respond()
   if(request.text && botRegex.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("Austin and Thomas 440 622-4742");
+    postMessage("Austin 512 740-7544 and Thomas 440 622-4742");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text))
