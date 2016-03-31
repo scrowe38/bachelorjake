@@ -8,7 +8,7 @@ function respond()
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/gmail/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/fuf/
       botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/theme/; botRegexSC = /^\/sup jake/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/a/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/wolf/; botRegexWk = /^\/users/; botRegexCC = /^\/snail/;
+      botRegexP = /^\/bowzer/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/wolf/; botRegexWk = /^\/users/; botRegexCC = /^\/snail/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -62,7 +62,7 @@ postMessage("pajamas");
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("fagtard");
+    postMessage("You mean brownzer");
     this.res.end();
   }  
 
