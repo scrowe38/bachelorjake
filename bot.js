@@ -117,8 +117,6 @@ postMessage("pajamas");
   else 
   {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/4Ae1GPz.jpg");
-postMessage("/I miss her");
     this.res.end();
   }
 }
