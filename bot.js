@@ -8,7 +8,7 @@ function respond()
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/gmail/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/fuf/
       botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/theme/; botRegexSC = /^\/sup jake/i; botODB = /\/Yo/i; botDuck = /^\/duck/;
-      botRegexP = /^\/bowser/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/wolf/; botRegexWk = /^\/users/; botRegexCC = /^\/snail/;
+      botRegexP = /^\/bowser/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/wolf/; botRegexWk = /^\/A/; botRegexCC = /^\/snail/;
       botRegexSiege = /^\/♋️/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -86,7 +86,7 @@ postMessage("pajamas");
   else if(request.text && botRegexWk.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
+    postMessage("https://45.media.tumblr.com/42947ffe336444c1655b3867a84acbc2/tumblr_nkqbcj1ajG1rzzn4po1_500.gif");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) 
