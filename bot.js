@@ -7,7 +7,7 @@ function respond()
 {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/gmail/;  botRegexDL = /^\/Cleveland/i;botRegexSalt = /^\/jake/;botRegexRules = /^\/fuf/
-      botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/theme/; botRegexSC = /^\/sup jake/i; botODB = /\/Yo/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/credit card rewards/;botRegexGTA = /^\/H/; botRegexSC = /^\/sup jake/i; botODB = /\/Yo/i; botDuck = /^\/duck/;
       botRegexP = /^\/bowser/i;  botRegexTw = /^\/Jake/i; botRegexSb = /^\/Northbrook/; botRegexSh = /^\/wolf/; botRegexWk = /^\/A/; botRegexCC = /^\/snail/;
       botRegexSiege = /^\/♋️/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -50,7 +50,7 @@ function respond()
   {
     this.res.writeHead(200);
    
-postMessage("pajamas");
+postMessage("No im not fine i got us bolth fucked up where he went home at 12 and i blacked out but vaguely remember puking at midway");
 
     this.res.end();
   } 
