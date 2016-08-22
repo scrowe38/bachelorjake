@@ -36,7 +36,7 @@ function respond()
   else if(request.text && botRegexAd.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("Wouldn't know, sounds like criminal activity.");
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) 
@@ -62,7 +62,7 @@ postMessage("No im not fine i got us bolth fucked up where he went home at 12 an
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("It was a bird and she wasn't that diabetic");
+    postMessage("https://media.giphy.com/media/3oJpyi7wBpo0sV9V9C/giphy.gif"+"It was a bird and she wasn't that diabetic");
     this.res.end();
   }  
 
