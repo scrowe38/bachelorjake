@@ -88,7 +88,7 @@ postMessage("It was a bird and she wasn't that diabetic");
   else if(request.text && botRegexWk.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("https://45.media.tumblr.com/42947ffe336444c1655b3867a84acbc2/tumblr_nkqbcj1ajG1rzzn4po1_500.gif");
+    postMessage("https://i.imgur.com/zYYSYwK.gif");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) 
