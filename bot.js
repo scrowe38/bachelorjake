@@ -19,7 +19,7 @@ function respond()
   {
     this.res.writeHead(200);
 postMessage("http://i.imgur.com/4Ae1GPz.jpg");
-    postMessage("There was a bear so joe only did 3 lines");
+    postMessage("Fuck the Indians");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text))
@@ -37,14 +37,14 @@ postMessage("http://i.imgur.com/4Ae1GPz.jpg");
   else if(request.text && botRegexAd.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("cubs BAW");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) 
   {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/Ci2s66m.jpg");
-    postMessage("show some respect, her names Ellen she is the one that got away");
+    postMessage("Hey Chicago what do you say");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text))
@@ -58,67 +58,68 @@ postMessage("No im not fine i got us bolth fucked up where he went home at 12 an
   else if(request.text && botRegexSC.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("pretty thirsty");
+    postMessage("Indians suck");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.giphy.com/media/3oJpyi7wBpo0sV9V9C/giphy.gif");
-postMessage("It was a bird and she wasn't that diabetic");
+postMessage("she was diabetic, go cubs");
     this.res.end();
   }  
 
   else if(request.text && botRegexTw.test(request.text)) 
   {
-    this.res.writeHead(200);
-    postMessage("ill need a ride my car was stolen");
+    this.res.writeHead;
+    postMessage("Cubs");
     this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("It's sick, ask Sean.");
+    postMessage("CUBS BAW");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/4Ae1GPz.jpg");
+    postMessage("CUBS BAW");
     this.res.end();
   } 
   else if(request.text && botRegexWk.test(request.text)) 
   {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/zYYSYwK.gif");
+    this.res.writehead(200);
+    postMessage("cubbies");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("THAT IS NOT WHAT HAPPENED");
+    postMessage("Fuck the land");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) 
   {
     this.res.writeHead(200);
-    postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    postMessage("cubs");
     this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text))
   {
     this.res.writeHead(200);
-    postMessage("since she had mono there was no kissing, so we had unprotected sex");
+    postMessage("Indians suck");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) 
   {
     this.res.writeHead(200);
-   postMessage("http://i.imgur.com/yXh1wEo.jpg");
+   postMessage("Cubs");
     this.res.end();
   }
   
   else 
   {
     this.res.writeHead(200);
+    postmessage("CUBS");
     this.res.end();
   }
 }
